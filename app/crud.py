@@ -55,3 +55,20 @@ def create_user(db: Session, user: schemas.UserCreate):
     db.commit()
     db.refresh(db_user)
     return db_user
+
+def save_adverts(db: Session, adverts: list):
+    """
+    Сохранение списка объявлений в базе данных
+    """
+    for advert_data in adverts:
+        advert = models.Advert(
+            id=advert_data['advert_id'],
+            title=advert_data['title'],
+            author=advert_data['author'],
+            views=advert_data['views'],
+            position=advert_data['position']
+        )
+        db.add(advert)
+    db.commit()
+    print("Adverts saved to database.")
+    

@@ -10,7 +10,7 @@ class Advert(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String, index=True)
-    author = Column(String)
+    author = Column(String, index=True)
     views = Column(Integer)
     position = Column(Integer)
 
