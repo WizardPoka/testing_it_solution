@@ -15,9 +15,7 @@ FarPost Advertisements API - это RESTful API, разработанное с �
 ## Шаг 1: Клонирование репозитория
 
 ```bash
-git clone https://github.com/yourusername/farpost-advertisements-api.git
-cd farpost-advertisements-api
-
+git clone https://github.com/yourusername/testing_it_solution.git
 
 ## Шаг 2: Создание и активация виртуального окружения
 
